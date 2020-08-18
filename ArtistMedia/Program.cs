@@ -15,15 +15,15 @@ namespace ArtistMedia
         {
             using (var reader = new StreamReader(@"C:\artist.txt"))
             {
-                List<string> listA = new List<string>();
-                List<string> listB = new List<string>();
+                List<string> Id = new List<string>();
+                List<string> Name = new List<string>();
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    var values = line.Split(';');
+                    var values = line.Split('\t');
 
-                    listA.Add(values[0]);
-                    listB.Add(values[1]);
+                    int id = int.Parse(values[0]);
+                    Name.Add(values[1]);
                 }
             }
         }
