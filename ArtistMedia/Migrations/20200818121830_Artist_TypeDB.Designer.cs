@@ -4,14 +4,16 @@ using ArtistMedia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ArtistMedia.Migrations
 {
     [DbContext(typeof(ArtistMediaContext))]
-    partial class ArtistMediaContextModelSnapshot : ModelSnapshot
+    [Migration("20200818121830_Artist_TypeDB")]
+    partial class Artist_TypeDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -104,7 +106,7 @@ namespace ArtistMedia.Migrations
                     b.Property<int?>("End_date_year")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Ended")
+                    b.Property<bool?>("Ended")
                         .HasColumnType("bit");
 
                     b.Property<int?>("Gender")
@@ -113,7 +115,7 @@ namespace ArtistMedia.Migrations
                     b.Property<Guid>("Gid")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime?>("Last_updated")
+                    b.Property<DateTime>("Last_updated")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

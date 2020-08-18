@@ -8,7 +8,7 @@ namespace ArtistMedia.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Parent { get; set; }
+        public int? Parent { get; set; }
         public int Child_order { get; set; }
         public string description { get; set; }
         public Guid Gid { get; set; }
