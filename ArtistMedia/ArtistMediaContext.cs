@@ -5,6 +5,7 @@ namespace ArtistMedia
 {
     public  class ArtistMediaContext : DbContext
     {
+       
         public DbSet<Artist_Type> Artist_Types { get; set; }
         public DbSet<Area> Areas { get; set; }
 
