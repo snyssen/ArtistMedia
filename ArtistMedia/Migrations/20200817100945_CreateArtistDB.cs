@@ -18,14 +18,14 @@ namespace ArtistMedia.Migrations
                     Begin_date_year = table.Column<int>(nullable: true),
                     Begin_date_month = table.Column<int>(nullable: true),
                     Begin_date_day = table.Column<int>(nullable: true),
-                    End_date_year = table.Column<int>(nullable: false),
-                    End_date_month = table.Column<int>(nullable: false),
-                    End_date_day = table.Column<int>(nullable: false),
-                    Type = table.Column<int>(nullable: false),
+                    End_date_year = table.Column<int>(nullable: true),
+                    End_date_month = table.Column<int>(nullable: true),
+                    End_date_day = table.Column<int>(nullable: true),
+                    Type = table.Column<int>(nullable: true),
                     Comment = table.Column<string>(nullable: true),
-                    Edits_pending = table.Column<int>(nullable: false),
-                    Last_updated = table.Column<DateTime>(nullable: false),
-                    Ended = table.Column<bool>(nullable: false)
+                    Edits_pending = table.Column<int>(nullable: true),
+                    Last_updated = table.Column<DateTime>(nullable: true),
+                    Ended = table.Column<bool>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -39,10 +39,10 @@ namespace ArtistMedia.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(nullable: true),
-                    Parent = table.Column<int>(nullable: false),
-                    Child_order = table.Column<int>(nullable: false),
+                    Parent = table.Column<int>(nullable: true),
+                    Child_order = table.Column<int>(nullable: true),
                     description = table.Column<string>(nullable: true),
-                    Gid = table.Column<Guid>(nullable: false)
+                    Gid = table.Column<Guid>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -58,19 +58,19 @@ namespace ArtistMedia.Migrations
                     Gid = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Sort_name = table.Column<string>(nullable: true),
-                    Begin_date_year = table.Column<int>(nullable: false),
-                    Begin_date_month = table.Column<int>(nullable: false),
-                    Begin_date_day = table.Column<int>(nullable: false),
-                    End_date_year = table.Column<int>(nullable: false),
-                    End_date_month = table.Column<int>(nullable: false),
-                    End_date_day = table.Column<int>(nullable: false),
-                    Type = table.Column<int>(nullable: false),
-                    Area = table.Column<int>(nullable: false),
-                    Gender = table.Column<int>(nullable: false),
+                    Begin_date_year = table.Column<int>(nullable: true),
+                    Begin_date_month = table.Column<int>(nullable: true),
+                    Begin_date_day = table.Column<int>(nullable: true),
+                    End_date_year = table.Column<int>(nullable: true),
+                    End_date_month = table.Column<int>(nullable: true),
+                    End_date_day = table.Column<int>(nullable: true),
+                    Type = table.Column<int>(nullable: true),
+                    Area = table.Column<int>(nullable: true),
+                    Gender = table.Column<int>(nullable: true),
                     Comment = table.Column<string>(nullable: true),
-                    Edits_pending = table.Column<int>(nullable: false),
-                    Last_updated = table.Column<DateTime>(nullable: false),
-                    Ended = table.Column<bool>(nullable: false)
+                    Edits_pending = table.Column<int>(nullable: true),
+                    Last_updated = table.Column<DateTime>(nullable: true),
+                    Ended = table.Column<bool>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -84,10 +84,10 @@ namespace ArtistMedia.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(nullable: true),
-                    Parent = table.Column<int>(nullable: false),
-                    Child_order = table.Column<int>(nullable: false),
+                    Parent = table.Column<int>(nullable: true),
+                    Child_order = table.Column<int>(nullable: true),
                     description = table.Column<string>(nullable: true),
-                    Gid = table.Column<Guid>(nullable: false)
+                    Gid = table.Column<Guid>(nullable: true)
                 },
                 constraints: table =>
                 {

@@ -26,31 +26,31 @@ namespace ArtistMedia.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("Begin_date_day")
+                    b.Property<int>("Begin_date_day")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Begin_date_month")
+                    b.Property<int>("Begin_date_month")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Begin_date_year")
+                    b.Property<int>("Begin_date_year")
                         .HasColumnType("int");
 
                     b.Property<string>("Comment")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Edits_pending")
+                    b.Property<int>("Edits_pending")
                         .HasColumnType("int");
 
-                    b.Property<int?>("End_date_day")
+                    b.Property<int>("End_date_day")
                         .HasColumnType("int");
 
-                    b.Property<int?>("End_date_month")
+                    b.Property<int>("End_date_month")
                         .HasColumnType("int");
 
-                    b.Property<int?>("End_date_year")
+                    b.Property<int>("End_date_year")
                         .HasColumnType("int");
 
-                    b.Property<bool?>("Ended")
+                    b.Property<bool>("Ended")
                         .HasColumnType("bit");
 
                     b.Property<Guid>("Gid")
@@ -62,7 +62,7 @@ namespace ArtistMedia.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Type")
+                    b.Property<int>("Type")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -77,43 +77,43 @@ namespace ArtistMedia.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("Area")
+                    b.Property<int>("Area")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Begin_date_day")
+                    b.Property<int>("Begin_date_day")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Begin_date_month")
+                    b.Property<int>("Begin_date_month")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Begin_date_year")
+                    b.Property<int>("Begin_date_year")
                         .HasColumnType("int");
 
                     b.Property<string>("Comment")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Edits_pending")
+                    b.Property<int>("Edits_pending")
                         .HasColumnType("int");
 
-                    b.Property<int?>("End_date_day")
+                    b.Property<int>("End_date_day")
                         .HasColumnType("int");
 
-                    b.Property<int?>("End_date_month")
+                    b.Property<int>("End_date_month")
                         .HasColumnType("int");
 
-                    b.Property<int?>("End_date_year")
+                    b.Property<int>("End_date_year")
                         .HasColumnType("int");
 
                     b.Property<bool>("Ended")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("Gender")
+                    b.Property<int>("Gender")
                         .HasColumnType("int");
 
                     b.Property<Guid>("Gid")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime?>("Last_updated")
+                    b.Property<DateTime>("Last_updated")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -122,7 +122,7 @@ namespace ArtistMedia.Migrations
                     b.Property<string>("Sort_name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Type")
+                    b.Property<int>("Type")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -146,7 +146,7 @@ namespace ArtistMedia.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Parent")
+                    b.Property<int>("Parent")
                         .HasColumnType("int");
 
                     b.Property<string>("description")
@@ -173,7 +173,7 @@ namespace ArtistMedia.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Parent")
+                    b.Property<int>("Parent")
                         .HasColumnType("int");
 
                     b.Property<string>("description")
